@@ -1,0 +1,97 @@
+{
+  "auth": {
+    "welcome_back": "مرحباً بعودتك",
+    "login_subtitle": "سجّل الدخول لمتابعة التعلم",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgot_password": "هل نسيت كلمة المرور؟",
+    "login": "تسجيل الدخول",
+    "no_account": "ليس لديك حساب؟",
+    "sign_up": "إنشاء حساب",
+    "create_account": "إنشاء حساب",
+    "full_name": "الاسم الكامل",
+    "confirm_password": "تأكيد كلمة المرور",
+    "have_account": "لديك حساب بالفعل؟",
+    "send_otp": "إرسال رمز التحقق",
+    "back_to_login": "العودة لتسجيل الدخول",
+    "verify_otp": "تأكيد رمز التحقق",
+    "enter_code": "أدخل الرمز المكوّن من 6 أرقام المرسل إلى بريدك",
+    "verify": "تأكيد",
+    "resend_code": "إعادة إرسال الرمز",
+    "change_password": "تغيير كلمة المرور",
+    "new_password": "كلمة المرور الجديدة",
+    "confirm_new_password": "تأكيد كلمة المرور الجديدة",
+    "confirm": "تأكيد",
+    "enter_email_to_receive_otp": "أدخل بريدك الإلكتروني لاستلام رمز التحقق"
+  },
+  "common": {
+    "edit": "تعديل",
+    "save": "حفظ"
+  },
+  "profile": {
+    "title": "الملف الشخصي والإعدادات",
+    "name": "الاسم",
+    "phone": "رقم الهاتف",
+    "password": "كلمة المرور",
+    "picture": "الصورة الشخصية"
+  },
+  "settings": {
+    "general": "الإعدادات العامة",
+    "change_language": "تغيير اللغة",
+    "change_theme": "تغيير النمط",
+    "light_theme": "فاتح",
+    "dark_theme": "داكن",
+    "logout": "تسجيل الخروج",
+    "manage_local_data": "إدارة البيانات المخزنة محلياً"
+  },
+  "dashboard": {
+    "title": "الواجهة الرئيسية",
+    "enrolled_courses": "الدورات/المعلمين الملتحق بهم",
+    "upcoming_lessons": "الحصص القادمة",
+    "payment_status": "حالة الدفع",
+    "quick_actions": "إجراءات سريعة",
+    "attendance": "الحضور",
+    "exams": "الامتحانات",
+    "assignments": "الواجبات",
+    "chat": "الدردشة"
+  },
+  "attendance": {
+    "title": "الحضور",
+    "mark_attendance": "تسجيل الحضور",
+    "scan_qr": "مسح QR",
+    "manual_entry": "إدخال يدوي",
+    "mark_departure": "تسجيل الانصراف",
+    "history": "السجل",
+    "statistics": "الإحصائيات"
+  },
+  "payments": {
+    "title": "طلبات الدفع",
+    "monthly_requests": "الطلبات الشهرية",
+    "confirm_payment": "تأكيد الدفع",
+    "online": "إلكتروني",
+    "cash": "نقدي",
+    "status": "الحالة",
+    "rejected": "مرفوض",
+    "accepted": "مقبول",
+    "pending": "قيد الانتظار"
+  },
+  "group_chat": {
+    "title": "دردشة المجموعة"
+  },
+  "private_chat": {
+    "title": "دردشة خاصة"
+  },
+  "chat": {
+    "type_message": "اكتب رسالة",
+    "send": "إرسال",
+    "attach": "إرفاق",
+    "images": "صور",
+    "files": "ملفات"
+  },
+  "assignments_exams": {
+    "title": "الواجبات والامتحانات",
+    "assignments": "الواجبات",
+    "exams": "الامتحانات",
+    "submit": "إرسال"
+  }
+}

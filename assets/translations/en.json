@@ -1,0 +1,97 @@
+{
+  "auth": {
+    "welcome_back": "Welcome back",
+    "login_subtitle": "Login to continue learning",
+    "email": "Email",
+    "password": "Password",
+    "forgot_password": "Forgot password?",
+    "login": "Login",
+    "no_account": "Don't have an account?",
+    "sign_up": "Sign up",
+    "create_account": "Create account",
+    "full_name": "Full name",
+    "confirm_password": "Confirm password",
+    "have_account": "Already have an account?",
+    "send_otp": "Send OTP",
+    "back_to_login": "Back to login",
+    "verify_otp": "Verify OTP",
+    "enter_code": "Enter the 6-digit code sent to your email",
+    "verify": "Verify",
+    "resend_code": "Resend code",
+    "change_password": "Change password",
+    "new_password": "New password",
+    "confirm_new_password": "Confirm new password",
+    "confirm": "Confirm",
+    "enter_email_to_receive_otp": "Enter your email to receive an OTP"
+  },
+  "common": {
+    "edit": "Edit",
+    "save": "Save"
+  },
+  "profile": {
+    "title": "Profile & Settings",
+    "name": "Name",
+    "phone": "Phone number",
+    "password": "Password",
+    "picture": "Profile picture"
+  },
+  "settings": {
+    "general": "General settings",
+    "change_language": "Change language",
+    "change_theme": "Change theme",
+    "light_theme": "Light",
+    "dark_theme": "Dark",
+    "logout": "Logout",
+    "manage_local_data": "Manage locally stored data"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "enrolled_courses": "Enrolled courses/teachers",
+    "upcoming_lessons": "Upcoming lessons",
+    "payment_status": "Payment status",
+    "quick_actions": "Quick actions",
+    "attendance": "Attendance",
+    "exams": "Exams",
+    "assignments": "Assignments",
+    "chat": "Chat"
+  },
+  "attendance": {
+    "title": "Attendance",
+    "mark_attendance": "Mark attendance",
+    "scan_qr": "Scan QR",
+    "manual_entry": "Manual entry",
+    "mark_departure": "Mark departure",
+    "history": "History",
+    "statistics": "Statistics"
+  },
+  "payments": {
+    "title": "Payment Requests",
+    "monthly_requests": "Monthly requests",
+    "confirm_payment": "Confirm payment",
+    "online": "Online",
+    "cash": "Cash",
+    "status": "Status",
+    "rejected": "Rejected",
+    "accepted": "Accepted",
+    "pending": "Pending"
+  },
+  "group_chat": {
+    "title": "Group Chat"
+  },
+  "private_chat": {
+    "title": "Private Chat"
+  },
+  "chat": {
+    "type_message": "Type a message",
+    "send": "Send",
+    "attach": "Attach",
+    "images": "Images",
+    "files": "Files"
+  },
+  "assignments_exams": {
+    "title": "Assignments & Exams",
+    "assignments": "Assignments",
+    "exams": "Exams",
+    "submit": "Submit"
+  }
+}
