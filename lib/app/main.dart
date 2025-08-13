@@ -1,4 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:task/app/router/app_router.dart';
@@ -11,6 +12,8 @@ import 'package:task/core/theme/theme_helper.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
+  await Firebase.initializeApp();
+
   await Future.wait([
     EasyLocalization.ensureInitialized(),
     LocalStorageService().openBox(),
