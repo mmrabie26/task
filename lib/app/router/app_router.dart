@@ -1,5 +1,8 @@
 import 'package:go_router/go_router.dart';
+import 'package:task/feature/authentication/presentation/pages/forgot_password_page.dart';
 import 'package:task/feature/authentication/presentation/pages/login_page.dart';
+import 'package:task/feature/authentication/presentation/pages/register_page.dart';
+import 'package:task/feature/authentication/presentation/pages/verify_otp_page.dart';
 
 abstract class AppRouter {
   static const String kLoginPage = '/login';
@@ -14,6 +17,9 @@ abstract class AppRouter {
     routes:
     [
       GoRoute(path: kLoginPage, builder: (context, state) => LoginPage()),
+      GoRoute(path: kRegisterPage, builder: (context, state) => RegisterPage()),
+      GoRoute(path: kForgetPasswordPage, builder: (context, state) => ForgotPasswordPage()),
+      GoRoute(path: kVerifyOtpPage, builder: (context, state) => VerifyOtpPage()),
     ],
   );
 }
