@@ -14,8 +14,8 @@
     "have_account": "لديك حساب بالفعل؟",
     "send_otp": "إرسال رمز التحقق",
     "back_to_login": "العودة لتسجيل الدخول",
-    "verify_otp": "تأكيد رمز التحقق",
-    "enter_code": "أدخل الرمز المكوّن من 6 أرقام المرسل إلى بريدك",
+    "verify_otp": "تأكيد الايميل",
+    "check_email": "من فضلك تحقق من بريدك الإلكتروني لتأكيد حسابك",
     "verify": "تأكيد",
     "resend_code": "إعادة إرسال الرمز",
     "change_password": "تغيير كلمة المرور",
@@ -46,14 +46,32 @@
   },
   "common": {
     "edit": "تعديل",
-    "save": "حفظ"
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب",
+    "refresh": "تحديث"
   },
   "profile": {
     "title": "الملف الشخصي والإعدادات",
     "name": "الاسم",
     "phone": "رقم الهاتف",
     "password": "كلمة المرور",
-    "picture": "الصورة الشخصية"
+    "picture": "الصورة الشخصية",
+    "email": "البريد الإلكتروني",
+    "personal_info": "المعلومات الشخصية",
+    "account_settings": "إعدادات الحساب",
+    "security": "الأمان",
+    "notifications": "الإشعارات",
+    "privacy": "الخصوصية",
+    "help_support": "المساعدة والدعم",
+    "about": "حول",
+    "version": "الإصدار",
+    "terms_conditions": "الشروط والأحكام",
+    "privacy_policy": "سياسة الخصوصية",
+    "other": "أخرى"
   },
   "settings": {
     "general": "الإعدادات العامة",
@@ -62,7 +80,11 @@
     "light_theme": "فاتح",
     "dark_theme": "داكن",
     "logout": "تسجيل الخروج",
-    "manage_local_data": "إدارة البيانات المخزنة محلياً"
+    "manage_local_data": "إدارة البيانات المخزنة محلياً",
+    "language_arabic": "العربية",
+    "language_english": "English",
+    "current_language": "اللغة الحالية",
+    "select_language": "اختر اللغة"
   },
   "dashboard": {
     "title": "الواجهة الرئيسية",
@@ -113,5 +135,23 @@
     "assignments": "الواجبات",
     "exams": "الامتحانات",
     "submit": "إرسال"
+  },
+  "users": {
+    "title": "المستخدمين",
+    "all_users": "جميع المستخدمين",
+    "total_users": "إجمالي المستخدمين",
+    "online_users": "المستخدمين المتصلين",
+    "offline_users": "المستخدمين غير المتصلين",
+    "user_status": "حالة المستخدم",
+    "last_seen": "آخر ظهور",
+    "user_type": "نوع المستخدم",
+    "student": "طالب",
+    "teacher": "معلم",
+    "admin": "مدير",
+    "moderator": "مشرف",
+    "no_users_found": "لم يتم العثور على مستخدمين",
+    "search_users": "البحث عن المستخدمين بالاسم أو البريد الإلكتروني",
+    "filter_by_type": "تصفية حسب نوع المستخدم",
+    "filter_by_status": "تصفية حسب الحالة"
   }
 }

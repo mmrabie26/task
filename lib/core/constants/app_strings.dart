@@ -30,7 +30,7 @@ abstract class AppString {
   static const String sendOtp = 'auth.send_otp';
   static const String backToLogin = 'auth.back_to_login';
   static const String verifyOtp = 'auth.verify_otp';
-  static const String enterCode = 'auth.enter_code';
+  static const String checkEmail = 'auth.check_email';
   static const String verify = 'auth.verify';
   static const String resendCode = 'auth.resend_code';
   static const String changePassword = 'auth.change_password';
@@ -49,9 +49,29 @@ abstract class AppString {
   static const String passwordRequirementsText = 'auth.password_requirements_text';
 
   // Common strings
+  static const String edit = 'common.edit';
+  static const String save = 'common.save';
+  static const String cancel = 'common.cancel';
+  static const String delete = 'common.delete';
+  static const String search = 'common.search';
+  static const String filter = 'common.filter';
+  static const String sort = 'common.sort';
+  static const String refresh = 'common.refresh';
 
   // Profile strings
   static const String profilePicture = 'profile.picture';
+  static const String profileEmail = 'profile.email';
+  static const String personalInfo = 'profile.personal_info';
+  static const String accountSettings = 'profile.account_settings';
+  static const String security = 'profile.security';
+  static const String notifications = 'profile.notifications';
+  static const String privacy = 'profile.privacy';
+  static const String helpSupport = 'profile.help_support';
+  static const String about = 'profile.about';
+  static const String version = 'profile.version';
+  static const String termsConditions = 'profile.terms_conditions';
+  static const String privacyPolicy = 'profile.privacy_policy';
+  static const String other = 'profile.other';
 
   // Settings strings
   static const String generalSettings = 'settings.general';
@@ -61,6 +81,10 @@ abstract class AppString {
   static const String darkTheme = 'settings.dark_theme';
   static const String logout = 'settings.logout';
   static const String manageLocalData = 'settings.manage_local_data';
+  static const String languageArabic = 'settings.language_arabic';
+  static const String languageEnglish = 'settings.language_english';
+  static const String currentLanguage = 'settings.current_language';
+  static const String selectLanguage = 'settings.select_language';
 
   // Dashboard strings
   static const String dashboardTitle = 'dashboard.title';
@@ -106,4 +130,22 @@ abstract class AppString {
   static const String assignmentsTitle = 'assignments_exams.assignments';
   static const String examsTitle = 'assignments_exams.exams';
   static const String submit = 'assignments_exams.submit';
+
+  // Users strings
+  static const String usersTitle = 'users.title';
+  static const String allUsers = 'users.all_users';
+  static const String totalUsers = 'users.total_users';
+  static const String onlineUsers = 'users.online_users';
+  static const String offlineUsers = 'users.offline_users';
+  static const String userStatus = 'users.user_status';
+  static const String lastSeen = 'users.last_seen';
+  static const String userType = 'users.user_type';
+  static const String student = 'users.student';
+  static const String teacher = 'users.teacher';
+  static const String admin = 'users.admin';
+  static const String moderator = 'users.moderator';
+  static const String noUsersFound = 'users.no_users_found';
+  static const String searchUsers = 'users.search_users';
+  static const String filterByType = 'users.filter_by_type';
+  static const String filterByStatus = 'users.filter_by_status';
 }

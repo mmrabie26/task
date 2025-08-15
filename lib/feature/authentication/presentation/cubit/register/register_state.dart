@@ -1,13 +1,13 @@
+import 'dart:io';
+
 import 'package:equatable/equatable.dart';
 import 'package:task/core/constants/enums.dart';
 
 class RegisterState extends Equatable {
   final RequestState status;
-  final String firstName;
-  final String secondName;
+  final String name;
   final String email;
   final String phone;
-  final String country;
   final String gender;
   final String otpCode;
   final String password;
@@ -15,18 +15,16 @@ class RegisterState extends Equatable {
   final bool showPassword;
   final bool showConfirmPassword;
   final String errorMessage;
-  final bool isValidFirstName;
-  final bool isValidSecondName;
+  final bool isValidName;
   final bool isValidEmail;
   final bool isValidPhone;
   final bool isValidPassword;
   final bool isValidConfirmPassword;
+  File? image;
 
-  const RegisterState({
-    required this.country,
+   RegisterState({
     this.status = RequestState.initial,
-    this.firstName = '',
-    this.secondName = '',
+    this.name = '',
     this.email = '',
     this.phone = '',
     this.otpCode = '',
@@ -36,17 +34,16 @@ class RegisterState extends Equatable {
     this.errorMessage = '',
     this.showPassword = true,
     this.showConfirmPassword = true,
-    this.isValidFirstName = false,
-    this.isValidSecondName = false,
+    this.isValidName = false,
     this.isValidEmail = false,
     this.isValidPhone = false,
     this.isValidPassword = false,
     this.isValidConfirmPassword = false,
+    this.image,
   });
 
   bool get isRegisterSubmitValid =>
-      isValidFirstName &&
-      isValidSecondName &&
+      isValidName &&
       isValidEmail &&
       isValidPhone &&
       isValidPassword &&
@@ -54,8 +51,7 @@ class RegisterState extends Equatable {
 
   RegisterState copyWith({
     RequestState? status,
-    String? firstName,
-    String? secondName,
+    String? name,
     String? email,
     String? phone,
     String? otpCode,
@@ -66,52 +62,49 @@ class RegisterState extends Equatable {
     String? errorMessage,
     bool? showPassword,
     bool? showConfirmPassword,
-    bool? isValidFirstName,
+    bool? isValidName,
     bool? isValidSecondName,
     bool? isValidEmail,
     bool? isValidPhone,
     bool? isValidPassword,
     bool? isValidConfirmPassword,
+    File? image,
   }) => RegisterState(
     status: status ?? this.status,
-    firstName: firstName ?? this.firstName,
-    secondName: secondName ?? this.secondName,
+    name: name ?? this.name,
     email: email ?? this.email,
     phone: phone ?? this.phone,
     otpCode: otpCode ?? this.otpCode,
-    country: country ?? this.country,
     gender: gender ?? this.gender,
     password: password ?? this.password,
     confirmPassword: confirmPassword ?? this.confirmPassword,
     errorMessage: errorMessage ?? this.errorMessage,
     showConfirmPassword: showConfirmPassword ?? this.showConfirmPassword,
     showPassword: showPassword ?? this.showPassword,
-    isValidFirstName: isValidFirstName ?? this.isValidFirstName,
-    isValidSecondName: isValidSecondName ?? this.isValidSecondName,
+    isValidName: isValidName ?? this.isValidName,
     isValidEmail: isValidEmail ?? this.isValidEmail,
     isValidPhone: isValidPhone ?? this.isValidPhone,
     isValidPassword: isValidPassword ?? this.isValidPassword,
     isValidConfirmPassword: isValidConfirmPassword ?? this.isValidConfirmPassword,
+    image: image ?? image,
   );
 
   @override
   // TODO: implement props
   List<Object?> get props => [
     status,
-    firstName,
-    secondName,
+    name,
     email,
     phone,
     otpCode,
-    country,
     gender,
+    image,
     password,
     confirmPassword,
     errorMessage,
     showPassword,
     showConfirmPassword,
-    isValidFirstName,
-    isValidSecondName,
+    isValidName,
     isValidEmail,
     isValidPhone,
     isValidPassword,

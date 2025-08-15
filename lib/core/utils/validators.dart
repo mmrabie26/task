@@ -16,6 +16,6 @@ abstract class Validators {
 
   static bool phoneValidation(String phone) {
     // يدعم الأرقام التي تبدأ بـ "+" أو "00" أو تبدأ مباشرة بمفتاح الدولة وأرقام
-    return RegExp(r'^(\+|00)?[1-9][0-9]{6,14}$').hasMatch(phone);
+    return RegExp(r'^(010|011|012|015)[0-9]{8}$').hasMatch(phone);
   }
 }

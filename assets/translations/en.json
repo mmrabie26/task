@@ -14,8 +14,8 @@
     "have_account": "Already have an account?",
     "send_otp": "Send OTP",
     "back_to_login": "Back to login",
-    "verify_otp": "Verify OTP",
-    "enter_code": "Enter the 6-digit code sent to your email",
+    "verify_otp": "Verify Email",
+    "check_email": "Please check your email to verify your account",
     "verify": "Verify",
     "resend_code": "Resend code",
     "change_password": "Change password",
@@ -46,14 +46,32 @@
   },
   "common": {
     "edit": "Edit",
-    "save": "Save"
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "refresh": "Refresh"
   },
   "profile": {
     "title": "Profile & Settings",
     "name": "Name",
     "phone": "Phone number",
     "password": "Password",
-    "picture": "Profile picture"
+    "picture": "Profile picture",
+    "email": "Email",
+    "personal_info": "Personal Information",
+    "account_settings": "Account Settings",
+    "security": "Security",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "help_support": "Help & Support",
+    "about": "About",
+    "version": "Version",
+    "terms_conditions": "Terms & Conditions",
+    "privacy_policy": "Privacy Policy",
+    "other": "Other"
   },
   "settings": {
     "general": "General settings",
@@ -62,7 +80,11 @@
     "light_theme": "Light",
     "dark_theme": "Dark",
     "logout": "Logout",
-    "manage_local_data": "Manage locally stored data"
+    "manage_local_data": "Manage locally stored data",
+    "language_arabic": "العربية",
+    "language_english": "English",
+    "current_language": "Current Language",
+    "select_language": "Select Language"
   },
   "dashboard": {
     "title": "Dashboard",
@@ -113,5 +135,23 @@
     "assignments": "Assignments",
     "exams": "Exams",
     "submit": "Submit"
+  },
+  "users": {
+    "title": "Users",
+    "all_users": "All Users",
+    "total_users": "Total Users",
+    "online_users": "Online Users",
+    "offline_users": "Offline Users",
+    "user_status": "User Status",
+    "last_seen": "Last Seen",
+    "user_type": "User Type",
+    "student": "Student",
+    "teacher": "Teacher",
+    "admin": "Admin",
+    "moderator": "Moderator",
+    "no_users_found": "No users found",
+    "search_users": "Search users by name or email",
+    "filter_by_type": "Filter by user type",
+    "filter_by_status": "Filter by status"
   }
 }

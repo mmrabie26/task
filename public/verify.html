@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Email Verification</title>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+        import { getAuth, applyActionCode } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+        const firebaseConfig = {
+          apiKey: "YOUR_API_KEY",
+          authDomain: "task2-2630c.firebaseapp.com",
+          projectId: "task2-2630c",
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const params = new URLSearchParams(window.location.search);
+        const oobCode = params.get("oobCode");
+
+        if (oobCode) {
+          applyActionCode(auth, oobCode)
+            .then(() => {
+              document.body.innerHTML = "<h1>✅ Email Verified Successfully!</h1>";
+            })
+            .catch((error) => {
+              document.body.innerHTML = `<h1>❌ Error: ${error.message}</h1>`;
+            });
+        }
+    </script>
+</head>
+<body>
+<h1>Verifying your email...</h1>
+</body>
+</html>

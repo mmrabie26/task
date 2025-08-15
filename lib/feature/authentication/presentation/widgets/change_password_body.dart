@@ -63,7 +63,7 @@ class ChangePasswordBody extends StatelessWidget {
               label: AppString.newPassword.tr(),
               hint: AppString.enterNewPassword.tr(),
               icon: Icons.lock_outlined,
-              isPassword: true,
+              isPassword: true, errorText: '', onChange: (String value) {  },
             ),
             
             const SizedBox(height: Spacing.s24),
@@ -72,7 +72,7 @@ class ChangePasswordBody extends StatelessWidget {
               label: AppString.confirmNewPassword.tr(),
               hint: AppString.confirmNewPasswordHint.tr(),
               icon: Icons.lock_outlined,
-              isPassword: true,
+              isPassword: true, errorText: '', onChange: (String value) {  },
             ),
             
             const SizedBox(height: Spacing.s32),
