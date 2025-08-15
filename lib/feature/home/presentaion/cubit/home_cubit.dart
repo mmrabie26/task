@@ -46,9 +46,10 @@ class HomeCubit extends Cubit<HomeState>{
     try{
       emit(state.copyWith(status: RequestState.loading));
       final response= await _signOutUseCase.call();
-      await response.fold((failure) {
+      LocalStorageService().setLoginStatus(false);
+      response.fold((failure) {
         emit(state.copyWith(signOutStatus: RequestState.error));
-      }, (r) async{
+      }, (r) {
         LocalStorageService().setLoginStatus(false);
         emit(state.copyWith(signOutStatus: RequestState.loaded));
       },);

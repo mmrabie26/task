@@ -36,6 +36,7 @@ class HomeRemoteDataSourceImplementation extends HomeRemoteDataSource {
   Future<void> signOut() async{
     try {
       await firebaseHelper.signOut();
+      LocalStorageService().setLoginStatus(false);
       throw ServerException(Failure('login by email error'));
     } on ServerException catch (e) {
       rethrow;

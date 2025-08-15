@@ -1,7 +1,7 @@
 # Task Flutter App
 
-- APK : [Download build link – add here]
-- video: [Invite link – add here]
+- APK : https://drive.google.com/file/d/1qR90qSG6ZggH1YRHb3ak6KP6MMQ0mwcu/view?usp=drive_link
+- video: https://drive.google.com/file/d/1bfF8sckPAo9gBFyGQQDvkOgOqxY8PAwE/view?usp=sharing
 
 ## GitHub Repository
 - Public repo URL: https://github.com/mmrabie26/task
@@ -23,7 +23,24 @@
 - Media: `image_picker`, `image_cropper`
 - Auth/Backend (ready to integrate): `firebase_core`, `firebase_auth`, `cloud_firestore`, `firebase_storage`, `supabase_flutter`
 - Localization: `easy_localization`
+
 ## Project Structure clean architecture
+
+Estimated Development Time
+
+The development of this project took approximately 10 hours, including:
+
+Planning and designing the app structure: ~1 hour
+
+Setting up Firebase and backend integration: ~0.5 hour
+
+Implementing UI screens and features: ~3 hours
+
+Adding logic to the user interface (UI Logic): ~2.5 hour
+
+Testing, debugging, and optimization: ~3 hours
+
+Total Estimated Time: ~10 hours
 
 ## Challenges & Solutions
 - Consistent modern UI without business logic
