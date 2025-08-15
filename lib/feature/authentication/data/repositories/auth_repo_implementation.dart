@@ -63,15 +63,6 @@ class AuthRepoImplementation extends AuthRepo {
 
   }
 
-  @override
-  Future<Either<Failure, List<UserEntity>>> getAllUser() async{
-    try{
-      final response= await _authRemoteDataSource.getAllUser();
-      return right(response);
-    }catch(e){
-      if(e is ServerException) return left(e.failure);
-      return left(Failure(e.toString()));
-    }
-  }
+
 
 }

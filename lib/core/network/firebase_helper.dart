@@ -25,6 +25,10 @@ class FirebaseHelper {
     );
   }
 
+  Future<void> signOut() async {
+      return await _auth.signOut();
+  }
+
   Future<bool> checkEmailVerify() async {
     await _auth.currentUser!.reload();
     return _auth.currentUser!.emailVerified;

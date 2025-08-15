@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:task/core/constants/app_strings.dart';
+import 'package:task/core/constants/enums.dart';
 import 'package:task/core/constants/spacing.dart';
 import 'package:task/feature/home/data/models/user_model.dart';
 import 'package:task/feature/home/domain/entities/user_entity.dart';

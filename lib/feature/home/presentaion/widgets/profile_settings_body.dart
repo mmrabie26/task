@@ -1,8 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
+import 'package:task/app/router/app_router.dart';
 import 'package:task/core/constants/app_strings.dart';
+import 'package:task/core/constants/enums.dart';
 import 'package:task/core/constants/spacing.dart';
 import 'package:task/core/services/LanguageProvider.dart';
 import 'package:task/core/theme/theme_helper.dart';
@@ -17,9 +20,20 @@ class ProfileSettingsBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<HomeCubit,HomeState>(
       listener: (context, state) {
-
+        if(state.signOutStatus==RequestState.loaded) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('User Sign out successfully!')),
+          );
+          context.go(AppRouter.kLoginPage);
+        }
+        if(state.signOutStatus==RequestState.error) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('User Sign out unsuccessfully!')),
+          );
+        }
       },
       builder: (context, state) {
+        final cubit=context.read<HomeCubit>();
        return SafeArea(
          child: SingleChildScrollView(
            padding: const EdgeInsets.all(Spacing.s16),
@@ -63,7 +77,7 @@ class ProfileSettingsBody extends StatelessWidget {
                    ],
                  ),
                  child: ElevatedButton.icon(
-                   onPressed: () {},
+                   onPressed: ()=> cubit.signOut(),
                    icon: const Icon(Icons.logout, color: Colors.white),
                    label: Text(
                      AppString.logout.tr(),

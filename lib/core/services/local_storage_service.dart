@@ -24,6 +24,14 @@ class LocalStorageService{
     return _settingBox!.get(key);
   }
 
+  Future<void> setLoginStatus(bool status)async{
+    await _settingBox!.put('loginStatus', status);
+  }
+
+  bool? getLoginStatus(){
+    return _settingBox!.get('loginStatus',defaultValue: false);
+  }
+
   Future<void> setTheme(String theme)async{
     await _settingBox!.put('theme', theme);
   }

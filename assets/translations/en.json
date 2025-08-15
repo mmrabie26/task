@@ -52,7 +52,8 @@
     "search": "Search",
     "filter": "Filter",
     "sort": "Sort",
-    "refresh": "Refresh"
+    "refresh": "Refresh",
+    "internetConnection":"No Internet Connection"
   },
   "profile": {
     "title": "Profile & Settings",

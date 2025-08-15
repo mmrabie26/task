@@ -15,7 +15,6 @@ abstract class AuthRepo {
 
   Future<Either<Failure, bool>> sendEmailVerify();
 
-  Future<Either<Failure, List<UserEntity>>> getAllUser();
 
   // Future<Either<Failure, String>> forgetPassword(String email);
   //

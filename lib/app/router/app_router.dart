@@ -1,4 +1,6 @@
 import 'package:go_router/go_router.dart';
+import 'package:task/core/services/app_keys.dart';
+import 'package:task/core/services/local_storage_service.dart';
 import 'package:task/feature/authentication/presentation/pages/change_password_page.dart';
 import 'package:task/feature/authentication/presentation/pages/forgot_password_page.dart';
 import 'package:task/feature/authentication/presentation/pages/login_page.dart';
@@ -18,7 +20,8 @@ abstract class AppRouter {
   static const String kUsersListPage = '/users-list';
 
   static final router = GoRouter(
-    initialLocation: kLoginPage,
+    navigatorKey: AppKeys.noInternetConnectionKey,
+    initialLocation: LocalStorageService().getLoginStatus()??false?AppRouter.kUsersListPage:kLoginPage,
     routes:
     [
       GoRoute(path: kLoginPage, builder: (context, state) => LoginPage()),

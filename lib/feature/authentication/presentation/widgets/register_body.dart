@@ -24,7 +24,7 @@ class RegisterBody extends StatelessWidget {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('User registered successfully!')),
           );
-          context.go(AppRouter.kVerifyOtpPage);
+          context.go(AppRouter.kLoginPage);
         }
         if(state.status==RequestState.error){
           ScaffoldMessenger.of(context).showSnackBar(

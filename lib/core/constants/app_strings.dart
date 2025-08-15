@@ -37,6 +37,7 @@ abstract class AppString {
   static const String newPassword = 'auth.new_password';
   static const String confirmNewPassword = 'auth.confirm_new_password';
   static const String confirm = 'auth.confirm';
+  static const String internetNotConnection = 'commen.internetConnection';
   static const String enterEmailToReceiveOtp = 'auth.enter_email_to_receive_otp';
   static const String forgotPasswordTitle = 'auth.forgot_password_title';
   static const String enterEmailAddress = 'auth.enter_email_address';

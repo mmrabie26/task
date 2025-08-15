@@ -11,6 +11,7 @@ import 'package:task/core/constants/app_strings.dart';
 import 'package:task/core/network/firebase_helper.dart';
 import 'package:task/core/services/LanguageProvider.dart';
 import 'package:task/core/services/local_storage_service.dart';
+import 'package:task/core/services/no_internet_overlay.dart';
 import 'package:task/core/theme/dark_theme.dart';
 import 'package:task/core/theme/light_theme.dart';
 import 'package:task/core/theme/theme_helper.dart';
@@ -31,8 +32,9 @@ void main() async {
       anonKey:
           'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ3bGpwc2FlZnRudnpuYm15Y3JrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUxODA1NzcsImV4cCI6MjA3MDc1NjU3N30.a3N561aAWvZ90EFkR5d7dCORP6P6_pdG9jNF-sI4kc8',
     ),
-    LocalStorageService().openBox(),
+  LocalStorageService().openBox(),
   ]);
+  NoInternetOverlay.init();
   runApp(
     EasyLocalization(
       supportedLocales: const [Locale('ar'), Locale('en')],

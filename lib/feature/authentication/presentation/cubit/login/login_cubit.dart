@@ -90,6 +90,7 @@ class LoginCubit extends Cubit<LoginState> {
         },
             (user) async{
               await LocalStorageService().addUser(user);
+              await LocalStorageService().setLoginStatus(true);
           emit(state.copyWith(status: RequestState.loaded));
         },
       );

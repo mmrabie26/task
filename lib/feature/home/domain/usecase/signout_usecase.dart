@@ -4,10 +4,10 @@ import 'package:task/feature/authentication/domain/repositories/auth_repo.dart';
 import 'package:task/feature/home/domain/entities/user_entity.dart';
 import 'package:task/feature/home/domain/repositories/home_repo.dart';
 
-class GetAllUserUseCase {
+class SignOutUseCase {
   final HomeRepo _homeRepo;
 
-  GetAllUserUseCase(this._homeRepo);
+  SignOutUseCase(this._homeRepo);
 
-  Future<Either<Failure, List<UserEntity>>> call() => _homeRepo.getAllUser();
+  Future<Either<Failure, void>> call() => _homeRepo.signOut();
 }

@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:task/core/error/exceptions.dart';
 import 'package:task/core/error/failure.dart';
 import 'package:task/core/network/firebase_helper.dart';
+import 'package:task/core/services/local_storage_service.dart';
 import 'package:task/feature/authentication/data/models/register_model.dart';
 import 'package:task/feature/home/data/models/user_model.dart';
 
@@ -17,7 +18,6 @@ abstract class AuthRemoteDataSource {
 
   Future<bool> sendEmailVerify();
 
-  Future<List<UserModel>> getAllUser();
 
 
   // Future<String> forgetPassword(String email);
@@ -89,16 +89,6 @@ class AuthRemoteDataSourceImplementation extends AuthRemoteDataSource {
     }
   }
 
-  @override
-  Future<List<UserModel>> getAllUser() async{
-    try {
-      return await firebaseHelper.getAllUsers();
-    } on ServerException catch (e) {
-      rethrow;
-    } catch (e) {
-      throw ServerException(Failure(e.toString()));
-    }
-  }
 
 
 }
